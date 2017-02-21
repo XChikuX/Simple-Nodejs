@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script  type="text/javascript" src="js/DorT.js"></script>
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Down or Trouble</h1>
+  <p>Things you select here are going to change the way you see everything</p>
+</div>
+<form role="search" style="width: 15em; margin: 0.3em 2em;">
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" id="search" onkeyup=f1()>
+        <div class="input-group-btn">
+            <button class="btn btn-default" id="search_button" onclick="f1(); return false;">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </div>
+    </div>
+</form>
+<div class="container">
+  <div class="row">
+<div class="col-sm-6">
+<div class="container-fixed-left">
+  <h2>Down</h2>
+  <p>This is pretty cool</p>            
+  <table class="table table-hover table-bordered table-condensed table-responsive" id="down">
+    <thead>
+      <tr>
+        <th>Issue</th>
+        <th>Status</th>
+        
+      </tr>
+    </thead>
+    <tbody id="down_body">
+      <tr></tr>
+    </tbody>  
+  </table>
+</div>
+
+</div>
+<div class="col-sm-6">
+<div class="container-fixed-right">
+  <h2>Trouble</h2>
+  <p>Hi I am just testing out some stuff</p>            
+  <table class="table table-hover table-bordered table-condensed table-responsive" id="trouble">
+    <thead>
+      <tr >
+        <th>Issue</th>
+        <th>Status</th>
+        
+      </tr>
+    </thead>
+    <tbody id="trouble_body">
+      <tr></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
